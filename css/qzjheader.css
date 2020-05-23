@@ -1,0 +1,12 @@
+.nav-list li>a>span{
+	transition:all 0.3s ease-in-out;
+}
+.head-box-lang span{
+	cursor: pointer;
+}
+.layui-layer{
+	/*top:120px !important;*/
+}
+.header-wrap{
+	border-bottom: 1px solid rgb(220,220,220);
+}

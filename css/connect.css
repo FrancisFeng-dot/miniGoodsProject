@@ -1,0 +1,78 @@
+.title{
+    padding-top: 249px;
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    font-family :STXihei;
+}
+
+
+.framework{
+    margin-top: 87px;
+    border: 1px solid transparent;
+    background: url("../image/lianxi-banner.jpg") no-repeat 50% 50%;
+    /*width: 100%;*/
+    height: 774px;
+}
+
+.introduce{
+    margin-top: 18px;
+    line-height: 28px;
+    font-weight: normal;
+}
+
+.framework section{
+    max-width: 1035px;
+    margin: auto;
+}
+
+.framework aside{
+    font-weight: bold;
+    margin-top: 271px;
+    width: 513px;
+    height: 299px;
+}
+
+.framework aside p{
+    width: 429px;
+}
+
+.min_logo{
+    text-align: right;
+}
+
+.min_logo img{
+    padding: 32px 10px 0 0;
+}
+
+#introduce{
+    max-width: 1035px;
+    margin:70px auto;
+}
+
+#introduce p{
+    color: #727272;
+    line-height: 26px;
+}
+
+
+.contactus{
+    max-width: 1035px;
+    margin: auto;
+    color: #727272;
+}
+
+.contactus p span{
+    color: red;
+    margin-left: 52px;
+}
+
+.contactus .f_18{
+    color: red;
+    padding:23px 0 18px 0;
+}
+
+footer{
+    margin-top: 157px;
+    z-index: 1001;
+}

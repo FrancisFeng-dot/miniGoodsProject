@@ -1,0 +1,728 @@
+@charset "utf-8";
+/* CSS Document */
+/* css  样式自用*/
+
+/* 通用css样式类：如，浮动，清除浮动、 */
+body,ul{ margin:0px; padding:0px;}
+html,body{ height:100%;}
+html{overflow-x:hidden;} /*IE7*/
+body{ font-family:"微软雅黑";
+    font: 14px Helvetica Neue,Helvetica,PingFang SC,\5FAE\8F6F\96C5\9ED1,Tahoma,Arial,sans-serif;
+}
+ 
+[v-cloak]{display:none;} 
+article,aside,dialog,footer,header,section,footer,nav,figure,menu{display:block;}
+blockquote, body, button, dd,
+div, dl, dt, form, h1, h2, h3, h4, h5, h6, input, li, ol, p, pre, td, textarea, th, ul {
+margin: 0;
+padding: 0;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+input, textarea, button, a {
+outline: 0; 
+}
+ 
+
+
+a,a:hover{ text-decoration:none;}
+
+.line{
+	text-decoration: underline;
+}
+
+.fl{ float:left;}
+.fr{ float:right;}
+
+.ps_a{ position:absolute;}
+.ps_r{ position:relative;}
+.ps_f{ position:fixed;}
+
+.t_r{ text-align:right;}
+.t_l{ text-align:left;}
+.t_c{ text-align:center;}
+
+.v_m{ vertical-align:middle;}
+.v_t{ vertical-align:middle;}
+
+.fw_b{ font-weight:700;}
+.fw_n{ font-weight:normal;}
+
+.hand{ cursor:pointer;}
+.def{ cursor:default;}
+
+.dpn{ display:none;}
+.dpb{ display:block;}
+.cl{ clear:both;}
+
+.of_h{ overflow:hidden;}
+.of_a{ overflow:auto;}
+.of_sx{ overflow-x:scroll;overflow-x:hidden;}
+.of_sy{ overflow-y:scroll;overflow-x:hidden;}
+.of_ay{ overflow-y:auto;overflow-x:hidden;}
+ 
+
+/*遮罩层*/
+#zhezhao{position:absolute;opacity:0.5; filter: alpha(opacity=50); background-color:#000; /* display:none; */ position:fixed;z-index:999; } 
+#jm{ display:none;position:fixed; _position:absolute; top:0; z-index:1000; margin:200px 0 0 700px; border:0px solid #999999; background:#FFFFFF; width:430px; height:180px;}
+/*   table  无边框的样式*/
+.tb_n{ margin:0px; border:0px; border-collapse:collapse; border-spacing:0px;}
+.tb_n td{padding:0px;}
+
+.tb_y{margin:0px; border:0px; border-collapse:separate; border-spacing:1px;}
+.tb_y td{padding:0px;}
+
+.tbc_1{ background:#bab6d1;}  /*table 的边框颜色*/
+
+
+/* ul 的横排列样式*/
+.lul{ list-style:none; padding:0px; margin:0px;}
+
+/*网站专用类如：背景图片，北京颜色、字体颜色*/
+/*字体大小类*/
+.f_10{ font-size:10px;}
+.f_12{ font-size:12px;}
+.f_13{ font-size:13px;}
+.f_14{ font-size:14px;}
+.f_15{ font-size:15px;}
+.f_16{ font-size:16px;}
+.f_18{ font-size:18px;}
+.f_20{ font-size:20px;}
+.f_24{ font-size:24px;}
+.f_26{font-size: 26px;}
+.f_28{ font-size:28px;}
+.f_35{font-size: 35px;}
+.f_40{font-size: 40px;}
+/* 字体种类*/
+.ff{ font-family:"微软雅黑";}
+/*字体颜色类*/
+.fc_0{ color:#FFF;}
+
+
+
+
+
+
+
+/*宽度类 像素*/
+.w_20{ width:20px;}
+
+
+
+/*宽度类 百分比*/
+.w_p100{ width:100%;}
+ 
+
+
+
+
+
+/*高度*/
+.h_10{ height:10px;}
+
+
+
+.h_p100{ height:100%;}
+
+
+
+
+/*行高*/
+.lh_19{line-height:19px;}  
+
+/*内边距*/
+.pd_0{ padding:0px;}
+
+
+.pr_15{ padding-right:15px;}
+
+.pl_5{ padding-left:5px;}
+
+
+.plr_4{ padding-left:4px; padding-right: 4px}
+.pt_2{ padding-top:2px;}
+.pt_5{padding-top: 5px;}
+.pt_6{padding-top: 6px;}
+.pt_8{padding-top: 8px;}
+.pt_10{padding-top: 10px;}
+.pt_11{
+	padding-top: 11px;
+}
+
+.pt_29{
+	padding-top: 29px;
+}
+
+.pb_2{ padding-bottom:2px;}
+
+
+
+
+/*外边距*/
+.mg_0{ margin:0px;}
+.mg_auto{ margin:0 auto;}
+
+
+.m_10{ margin:10px;}
+.m_lr10{ margin:0px 10px;}
+.ml_7{margin-left: 7px;}
+.ml_25{margin-left: 25px;}
+.ml_42{ margin-left:42px;}
+.ml_65{margin-left: 65px;}
+.ml_90{margin-left: 90px;}
+.ml_116{margin-left: 116px;}
+.ml_125{margin-left: 125px;}
+.mr_10{ margin-right:10px;}
+.mr_30{margin-right: 30px;}
+.mr_35{margin-right: 35px;}
+
+.mt_f416{margin-top: -416px;}
+.mt_f331{margin-top: -331px;}
+.mt_f231{margin-top: -231px;}
+.mt_f30{margin-top: -30px;}
+.mt_f1{ margin-top:-1px;}
+.mt_1{padding-top: 1px;}
+.mt_3{margin-top: 3px;}
+.mt_10{margin-top: 10px;}
+.mt_33{margin-top: 33px;}
+.mt_55{margin-top: 55px;}
+.mt_59{margin-top: 59px;}
+.mt_64{margin-top: 64px;}
+.mt_76{margin-top: 76px;}
+.mt_80{margin-top: 80px;}
+.mt_160{ margin-top:160px;}
+.mb_1{ margin-bottom:1px;}
+
+/*相对于父级的  top   bottom  left  right*/
+.t_p50{ top:50%;}
+
+/*div层级*/
+.zi_z1{ z-index:1;}
+
+/*圆角*/
+.yj_t1{
+	border-top-left-radius: 8px;
+    border-top-right-radius: 8px;	
+	}
+	
+.yj_b1{
+	border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;	
+	}
+
+.yj_tr{
+	border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.zi_f1{ z-index:-1;}
+
+/*背景颜色*/
+.bgc_n{background:none;}   /* 无色 */
+.bgc_f{background: #fff;}  /* 白色 */
+
+/*背景图片*/
+.bgi_0{ background:url(../images/tobar_02.png) repeat-x;}
+
+
+/*边框大小*/
+.b_0{ border:0px;}
+ 
+.bt_1{ border-top:1px solid #B1C8D3;}
+
+
+.br_0{ border-right:0px;}
+
+.br_n{ border-radius:0px;}
+
+.bl_1{ border-left:1px solid #000;} 
+
+.br_1{ border-right:1px solid #000;} 
+
+.blr_1{border-right:1px solid #B1C8D3;border-left:1px solid #B1C8D3;}
+
+.btl_1{ border-top:1px solid #B1C8D3;border-left:1px solid #B1C8D3;}
+
+.br_0{	border-radius: 0px;}
+
+/*对某些元素的修饰超过 两个属性以上的*/
+.div_alc{display:inline-block;margin:0px 10px;}/* div的居中对齐方法,必须配合外层*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*响应式样式布局配合meta标签   代码：<meta name="viewport" content="width=device-width, initial-scale=1" />*/
+@media screen and (min-width:1200px) and (max-width:1400px){
+								  	
+									}
+									
+@media screen and (max-width:1199px){
+								  
+									}
+
+@media screen and (min-width:1401px){
+								 
+								 
+									}									
+/****************************************************************************************************************************************************************************/									
+/*选择器参考*/
+ /*.father .child{color:#0000CC;}   后代选择器*/
+/*#links > a {color:blue;}           儿子选择器*/
+/*p *{color:blue;}                   后代的 通通  子元素*/
+/*h1 + p {color:blue}                下一个元素选择器，H1 紧跟的后面p元素*/
+/*p[title='app']{　color:#FF0000;}    通过属性选择  p标签中title属性为app 的元素*/
+
+
+
+
+
+
+
+/*对于IE，火狐，谷歌，平果浏览器的兼容性问题的，css样式
+
+FF认识 !inportant  IE不认识
+padding 在FF中会增加height 和width ；  在IE中则不会
+
+div{margin:30px!important;margin:28px;} 注意这两个 margin的顺序一定不能写反， important这个属性IE不能识别，但别的浏览器可以识别
+*/
+
+/*********************************************
+手机布局注意几个问题
+
+1、width 用百分比 ；  少用不用高度height；
+
+2、尽量从里面倒外边控制margin；不用设置高度，而用撑开；
+
+3、字体不用px；
+
+
+某网站系统的字体配色：
+
+.fc_zw{ color:#363636;} /*正文黑色字体，不采用全黑；*
+.fc_qdsz{ color:#00559e;}/*浅底色，深字体颜色 、 标题选中加粗，大小和正文一致   
+.fc_sdbz{ color:#fffeff;}/*深底色，白色字体，标题选中加粗，大小和正文
+.fc_zs{ color:#9b9b9b；} /* 白底，注释用字体，浅灰色/
+.fc_ts{ color:#00549c;}/*提示字体颜色，浅蓝/
+
+.f_12{ font-size:12px;} /*栏目标题和正文都用12号字体， 标题被选中可以加粗； 行高一般用30的行高；
+.lh_30{ line-height:30px;} /*栏目高度一般是30； 导航nav用 34；   栏目的tab高度27；于nav相差大概7~8个像0素； /
+.h_25{height:25px;}/*搜索框input的高度23~25左右， 另外可以组两个一个像素的框叠加看似边框2个像素却不同颜色，/
+
+
+**/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body{
+	width: 100%;
+}
+
+/*
+	页面选项切换样式
+*/
+.option{
+	width: 999px;
+	margin: 75px auto;
+}
+
+.option ul{
+	text-align:center;
+}
+.option ul li{
+	display: inline-block;
+	width: 44px;
+	height: 44px;
+	line-height: 44px;
+	font-size: 18px;
+	font-family: sans-serif;
+	font-weight:100;
+	list-style: none;
+	text-align: center;
+	background: #595959;
+	margin-left: 5px;
+	cursor: pointer;
+}
+.option ul li>a{
+	color: #fff;
+	width: 100%;
+    height: 100%;
+    display: inline-block;
+}
+.option ul li>span{
+	color: #fff;
+}
+.option ul .option2>span{
+	color: #2e3740!important;
+	font-weight:400!important;
+}
+.option2{
+	width: 42px!important;
+	height: 42px!important;
+	line-height: 40px!important;
+	border: 1px solid #2e3740;
+	background: #fff!important;
+}
+.option2 a{
+	color: #2e3740!important;
+	font-weight:400!important;
+}
+
+#selected{
+	background: white;
+	color: black;
+}
+
+/*尾部样式*/
+
+
+footer{
+	position: relative;
+/*	margin-top: 250px;*/
+	background: #e60214;
+	min-height: 443px;
+	width: 100%;
+}
+.ulone{
+	line-height: 48px;
+	padding: 50px 0 0 67px;
+	float: left;
+}
+footer ul{
+	list-style: none;
+	line-height: 45px;
+	color: white;
+	display: inline-block;
+}
+.mt_105{
+	margin-top: 105px;
+}
+.mt_208{
+	margin-top: 208px;
+}
+.mt_11{
+	margin-top: 11px;
+}
+.positioning{
+	position: relative;
+	top: 7px;
+}
+footer ul li a,footer ul li{
+	font-size: 30px;
+	color: white;
+}
+
+.ultwo{
+	padding: 50px 57px 0 0;
+	text-align: right;
+}
+
+.mt-6{
+	margin-top: -6px;
+}
+
+.ultwo,.bg1,.bg2,.bg3,.bg4,.bg5{
+	float: right;
+}
+
+.bg1{
+	margin: 9px 0  0 25px;
+	width: 27px;
+	height: 27px;
+	background: url("../index/image/sprite.png")  ;
+}
+
+.bg2{
+	margin: 9px -8px  0 7px;
+	width: 27px;
+	height: 27px;
+	background: url("../index/image/sprite.png")0 -76px ;
+}
+
+.bg3{
+	margin: 12px 0  0 2px;
+	width: 27px;
+	height: 24px;
+	background: url("../index/image/sprite.png")0 -56px ;
+}
+
+.bg4{
+	margin: 9px 0  0 20px;
+	width: 27px;
+	height: 27px;
+	background: url("../index/image/sprite.png")0 -32px ;
+}
+
+.bg5{
+	margin: 19px 0  0 14px;
+	width: 33px;
+	height: 5px;
+	background: url("../index/image/sprite.png") 0 -27px ;
+}
+.lihei{
+	line-height: 34px;
+}
+
+.lis{
+	float: left;
+	padding: 11px 11px 0 0;
+}
+.CONNECT{
+	float: left;
+	padding-top: 11px;
+}
+
+footer a:hover{
+	text-decoration: underline;
+}
+
+.hideul{
+	display: none;
+}
+
+/*媒体查询footer*/
+@media screen and (max-width:840px){
+
+	.ulone,.ultwo{
+		display: none;
+	}
+
+	.hideul{
+		width: 200px;
+		display: block;
+		margin: 0 auto;
+		text-align: center;
+	}
+	.bg1{
+		margin-left: -20px;
+	}
+}

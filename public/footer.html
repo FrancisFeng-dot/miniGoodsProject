@@ -1,0 +1,65 @@
+<!--尾部开始-->
+
+
+<footer >
+    <div class="foot-box cl">
+        <div class="foot-box-left fl">
+            <p class="foot-left-title">
+                {if $langtype == 1} SELECTION OF <br>HIGH-QUALITY<br>KOREAN BRAND
+                {else} 의 선택 <br>고품질<br>한국 상품 매장 {/if}
+            </p>
+
+            <div class="foot-logo">
+                <img src="INDEX_IMAGE/footer-logo.png" alt="">
+            </div>
+            <p class="copyright"> © 2017 minigood Inc.</p>
+        </div>
+
+        <div class="foot-box-right fr">
+            <div class="join-us fr">
+                <span class="joinUs-text"> {if $langtype == 1}join us{else}우리와 함께{/if}</span>
+                <a class="joinUs-more" href="http://minigood.weiyuliang.com/index.php/index/connect">></a>
+            </div>
+
+            <div class="follow-us fr cl">
+                <span class="followUs-text">{if $langtype == 1}Follow us{else}우리 따라{/if}</span>
+                <span class="follow-line"><i></i></span>
+                <a href="">
+                    <img src="INDEX_IMAGE/f_03.png" alt="">
+                </a>
+                <a href="">
+                    <img src="INDEX_IMAGE/t_03.png" alt="">
+                </a>
+                <a href="">
+                    <img src="INDEX_IMAGE/w_03.png" alt="">
+                </a>
+            </div>
+
+            <ul class="footer-nav fl cl">
+                {volist name="menuList" id="ice"}
+                <li name="menuli5">
+                {if $langtype==1}
+                    <a href="{$ice['url']}">{$ice['name'][0]}</a>
+                {else}
+                    <a href="{$ice['url']}">{$ice['name'][1]}</a>
+                {/if}
+                </li>
+                {/volist}
+            </ul>
+        </div>
+    </div>
+</footer>
+<script>
+    $(document).ready(function(){
+        if(location.href.indexOf('com')>0){
+
+        $("[name='menuli5']").eq(3).find('a').eq(0).attr('href','/index.php/index/news?cateid=152');
+        }
+        if(location.href.indexOf('co.kr')>0||location.href.indexOf('kr')>0){
+
+        $("[name='menuli5']").eq(3).find('a').eq(0).attr('href','/index.php/index/news?cateid=155');
+        }
+    });
+
+</script>
+

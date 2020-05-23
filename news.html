@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" media="screen and (max-width:1200px)" href="/index/css/common-s.css" />
+    <link rel="stylesheet" media="screen and (min-width:1200px) and (max-width:1440px)" href="/index/css/common-m.css" />
+    <link rel="stylesheet" media="screen and (min-width:1440px)" href="/index/css/common.css" />
+    <link rel="stylesheet" href="/index/css/WYL_css.css"/>
+    <link rel="stylesheet" href="/index/css/news.css"/>
+    <link rel="stylesheet" href="/index/css/lyx.css">
+    <link rel="stylesheet" media="screen and (max-width:414px)" href="/index/css/phone.css" />
+</head>
+<body>
+<!--头部开始-->
+{include file="./public/header.html"}
+<!--头部结束-->
+
+<!--主体内容开始-->
+<article class="news-article" style="min-height: 600px;">
+
+    <p class="f_18 Coverage">{$coverage[$langtype]}</p>
+
+    {volist name='list' id='new'}
+    <section><!--第一块内容-->
+        {if condition="$new['is_video']==0"}
+            <a href="/index.php/index/newsxq?id={$new['id']}">
+        {else/}
+            <a href="/index.php/index/newsvideo?id={$new['id']}">
+        {/if}
+            <div class="container">
+               {if condition="$new['thumb'] eq '' "}
+                <img src="/image/new01.jpg" alt=""/>
+                {else/}
+                <img src="{$new['thumb']}" alt=""/>
+               {/if}
+            </div>
+        </a>
+        <aside>
+        {if condition="$new['is_video']==0"}
+            <a href="/index.php/index/newsxq?id={$new['id']}">
+        {else/}
+            <a href="/index.php/index/newsvideo?id={$new['id']}">
+        {/if}
+                <p class="title f_16">
+                    <b>{$new['title']}</b>
+                </p>
+            </a>
+        {if condition="$new['is_video']==0"}
+            <a href="/index.php/index/newsxq?id={$new['id']}">
+        {else/}
+            <a href="/index.php/index/newsvideo?id={$new['id']}">
+        {/if}
+                <p class="content f_14 textover3">
+                    {$new['description']}
+                    <br/>
+                </p>
+            </a>
+            <p class="time f_12"><?php echo date("Y-m-d H:i:s",$new['createtime']) ?></p>
+        </aside>
+        <div class="stripe">
+        </div>
+    </section>
+    {/volist}
+    <!-- 选项切换-->
+    <div class="option">
+    <div>
+        
+        {$page}
+    </div>
+    </div>
+</article>
+<!--尾部开始-->
+{include file="./public/footer.html"}
+<!--尾部结束-->
+</body>
+</html>
+<script>
+    $(document).ready(function(){
+        $(".option li").first().css('display','none'); //去掉首尾<<、>>
+        $(".option li").last().css('display','none');  
+        var pagearr = location.href.split('page=');
+        if(pagearr[1]){
+            $(".option li").eq(pagearr[1]).addClass('option2');   
+        } //是第几页就将class付给谁
+        var pagearr3 = location.href.split('cateid=');
+        var pagearr4 = pagearr3[1].split('&&');//拿到cateid
+        for(i=0;i<$(".option li").length;i++){
+            var menuclass = $(".option li").eq(i).find('a').attr('href');//拿到a标签的链接
+            if(menuclass){
+                var menuclass2 = menuclass.split('page=');//拿到page页
+                var menuclass3 = '/index.php/index/news' + '?cateid=' + pagearr4[0] + '&&page=' + menuclass2[1];//重新整理a链接
+                $(".option li").eq(i).find('a').attr('href',menuclass3);//重新赋值
+            }
+        }
+        var pagearr2 = location.href.split('/');
+        var urlarr2 = pagearr2[5].split('?');
+        if(urlarr2[0]){
+            if(urlarr2[0]=='news'&&!pagearr4[1]){
+                $(".option li").eq(1).addClass('option2');   
+            }
+        }//当没有page的时候给第一个复class
+    });
+    $('.option li').click(function () {
+        var a = $(this).index();
+        $(".option li").removeClass('option2');  
+        $(".option li").eq(a).addClass('option2');   
+    });
+</script>

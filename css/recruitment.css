@@ -1,0 +1,53 @@
+ol li{
+    list-style-position:inside;
+    line-height: 26px;
+}
+
+.title{
+    padding-top: 249px;
+    text-align: center;
+    font-size: 50px;
+    margin: auto;
+    font-family :STXihei;
+}
+
+.framework .f_24{
+    color: red;
+}
+
+.framework .f_18{
+    margin-top: 25px;
+}
+.framework li, .color{
+   color: #848484;
+}
+.framework{
+	padding-left: 20px;
+    font-size: 14px;
+    max-width: 1035px;
+    margin:96px auto;
+}
+.framework span{
+	color: #e83428;
+}
+
+.contactus{
+    max-width: 1035px;
+    margin: -11px auto;
+    color: #727272;
+}
+
+.contactus .f_18{
+    color: red;
+    padding:23px 0 18px 0;
+}
+
+footer{
+    margin-top: 143px;
+}
+.vietnam{
+	display: none;
+}
+#vietnam{
+	cursor: pointer;
+}

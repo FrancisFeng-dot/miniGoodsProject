@@ -1,0 +1,114 @@
+/*
+    index
+................................................................
+*/
+
+/*导航栏*/
+.head-box-nav:hover .col-span{
+    display: none;
+}
+.head-box-nav:hover .nav-list{
+    display: block;
+}
+
+.products-list .products-list-img{
+    overflow: hidden;
+}
+/*.products-list p{
+    transition:all 0.3s ease-in-out;
+}
+.products-list p:hover{
+    color: #ff0000;
+}*/
+.products-list li img,.products-list li p {
+    transition: all 2s;
+}
+.products-list li:hover p{
+    color: #ff0000;
+}
+.products-list li:hover img{
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+    animation: h-img 3s;
+}
+@keyframes h-img {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/*.content-top-title {
+    transition: all 3s;
+}
+.content-top-title:hover{
+    animation: title 2s;
+}*/
+/*@keyframes title {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}*/
+.design-con-img::after,
+.design-con-text::after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height:8px;
+    transition: width 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.design-con-img,
+.design-con-text {
+    position: relative;
+}
+.design-con-img:hover::after{
+    width: 100%;
+    background-color: #ff332e;
+}
+.design-con-text:hover::after{
+    width: 100%;
+    background-color: #f8ff54;
+}
+.core-value-tags li a{
+    transition: all 1s;
+}
+.core-value-tags li:hover a{
+    color: #f8ff54;
+}
+
+.container img:hover {
+    transform: scale(1.1);
+}
+
+article section:hover {
+    /*background: #ffd814;*/
+    opacity: 0.8;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+article section:hover .stripe {
+    width: 100%;
+    transition-timing-function: cubic-bezier(0.42, 0, 0.58, 1);
+}
+
+
+.border_none:hover {
+    transform: scale(1.1);
+    opacity: 0.9;
+}
+a:hover{
+    color: white;
+}

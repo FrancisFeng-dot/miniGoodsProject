@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet" media="screen and (max-width:1200px)" href="/index/css/common-s.css" />
+    <link rel="stylesheet" media="screen and (min-width:1200px) and (max-width:1440px)" href="/index/css/common-m.css" />
+    <link rel="stylesheet" media="screen and (min-width:1440px)" href="/index/css/common.css" />
+    <link rel="stylesheet" href="/index/css/WYL_css.css"/>
+    <link rel="stylesheet" href="/index/css/news.css"/>
+    <link rel="stylesheet" href="/index/css/lyx.css">
+    <link rel="stylesheet" media="screen and (max-width:414px)" href="/index/css/phone.css" />
+</head>
+<body>
+
+
+<!--头部-->
+
+{include file="./public/header.html"}
+
+<!--主体内容开始-->
+<article class="news-article" style="min-height: 600px;">
+    <div class="news_top">
+        <p class="f_24 news_title"> {$new.title}</p >
+      <p class="news_time f_12"><?php echo date("Y-m-d H:i:s",$new['createtime']) ?></p >
+  </div>
+    <div style="margin-bottom:12%;text-align: center;">
+      {$new['url']}
+    </div>     
+</article>
+     
+<!--尾部开始-->
+{include file="./public/footer.html"}
+<!--尾部结束-->
+</body>
+</html>

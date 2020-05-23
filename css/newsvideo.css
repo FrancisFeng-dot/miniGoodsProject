@@ -1,0 +1,38 @@
+/*主体内容样式*/
+article {
+    max-width: 1036px;
+    margin: 0 auto;
+}
+
+article section {
+    display: flex;
+}
+
+.Coverage {
+    padding: 160px 0 31px 0
+}
+
+.framework {
+    overflow: hidden;
+}
+
+.border_none {
+    border: none;
+    transition: all 0.5s;
+}
+
+.border_none img {
+    margin: 0;
+}
+
+
+.middle {
+    text-align: center;
+    color: black;
+    padding-bottom: 66px;
+}
+
+#mt-7{
+    margin-top: -70px;
+}
+

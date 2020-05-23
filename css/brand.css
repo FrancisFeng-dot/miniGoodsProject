@@ -1,0 +1,318 @@
+.giant-screen{
+    width: 100%;
+    /*background: url("../image/pinpai01.jpg") no-repeat 50% 50%;*/
+    /*height: 915px;*/
+    padding-top: 122px;
+}
+
+.framework_one{
+    min-height: 862px;
+    width: 100%;
+}
+
+.framework_two{
+    max-width: 1035px;
+    margin: auto;
+    height: 100%;
+}
+
+.content{
+    max-width: 302px;
+    height: 100%;
+}
+
+.bg_one{
+    margin:128px auto 20px;
+    height: 105px;
+    max-width: 105px;
+    border: 2px solid #a6a6a6;
+    border-radius: 50%;
+}
+
+.bgcontainer{
+    margin: 23px auto;
+    height: 60px;
+    width: 60px;
+}
+.bg_1{
+    background: url("../image/sprite.png")-42px 4px;
+}
+.bg_2{
+    background: url("../image/sprite.png")-41px -61px;
+}
+.bg_3{
+    height: 40px;
+    background: url("../image/sprite.png")-414px -136px;
+}
+
+.Brand{
+    padding-top: 5px;
+    font-size: 35px;
+    text-align: center;
+    font-family :STXihei;
+}
+
+aside{
+    color: #a6a6a6;
+    text-align:Justify;
+    text-justify:inter-ideograph;
+    margin: 51px auto 0;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+.Development_History{
+    background: url("../image/brand-bg-blue_02.png");
+    height: 1482px;
+    width: 100%;
+    position: relative;
+}
+.Development_History_title{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 74px;
+    font-family :STXihei;
+}
+.bg_Development_History{
+    display: flex;
+    margin: 98px auto 0 ;
+    height: 1100px;
+    background: url("../image/pinpaicircle.png")no-repeat 50% 50%;
+    background-size:85%;
+    
+}
+/*.bg_Development_History .mt_f437 p{
+    line-height: 30px;
+}*/
+.bg_Development_History div{
+    max-width: 280px;
+    display: inline-block;
+}
+.bg_Development_History p{
+    margin-top: 626px;
+    color: #6e6e6e;
+    line-height: 24px;
+    text-align: left;
+    font-size: 12px;
+}
+.Wh_263{
+    max-width: 263px;
+}
+.Wh_333{
+    max-width: 333px;
+}
+.Wh_320{
+    max-width: 320px;
+}
+
+
+
+
+.Brand_life{
+    overflow: hidden;
+    margin-top: -32px;
+    height: 701px;
+    width: 100%;
+    background: url("../image/bhd.png") no-repeat 50% 50%;
+}
+
+
+.Brand_life section{
+    max-width: 1504px;
+    width: 78.3%;
+    height: 377px;
+    margin: 153px auto;
+    background: white;
+    opacity: 0.96;
+}
+
+.Brandcontent{
+    max-width: 1033px;
+    margin: auto;
+    text-align:Justify;
+    text-justify:inter-ideograph;
+}
+
+.introduced{
+    font-family:"微软雅黑";
+    margin-top: 41px;
+    line-height: 29px;
+}
+
+.Brand_title{
+    font-size: 36px;
+    text-align: center;
+    padding-top: 59px;
+    font-family: STXihei;
+}
+
+.Global_Sourcing{
+    background: url("../image/bg_Sourcing.png")no-repeat 50% 50%;
+    height: 1200px;
+    width: 100%;
+    margin-top: -49px;
+    overflow: hidden;
+}
+
+.Global_Sourcing_container{
+    text-align:Justify;
+    text-justify:inter-ideograph;
+    max-width: 1033px;
+    margin: 111px auto 0;
+}
+
+.Global_Sourcing_container .Brand_title{
+    margin-top: 130px ;
+}
+
+.Global_Sourcing .introduced{
+    margin-top: 37px;
+    color: #6e6e6e;
+    line-height: 30px;
+}
+
+.Global_Sourcing .title_two{
+    margin-top: 79px;
+}
+
+.Global_Sourcing .introduced_two{
+    margin-top: 43px;
+}
+
+
+/*创始人*/
+
+.Founder{
+    height: 1015px;
+    width: 100%;
+}
+
+.Founder_container{
+    display: flex;
+    max-width: 1033px;
+    margin: auto;
+    margin-top: 85px;
+}
+
+.bg_Founder{
+    float: left;
+    width: 470px;
+    height: 572px;
+    background: url("../image/founder.jpg") no-repeat 50% 50%;
+}
+
+.Founder_content{
+    padding: 58px 33px 0 26px;
+    line-height: 29px;
+    text-align: justify;
+    display: table-cell;
+    max-height: 572px;
+    max-width: 563px;
+    background: #f6fcfb;
+}
+
+
+/*设计师团队*/
+.Team{
+    width: 100%;
+    height: 671px;
+    background: url("../image/pinpairec.png") no-repeat 50% 50%;
+    margin-top: -98px;
+    overflow: hidden;
+    color: white;
+}
+.frim{float: right!important;}
+.flim{float: left!important;}
+.flex{
+    display: flex;
+}
+.brandbanner{
+    margin-left: 4%;
+    margin-right: 8%;
+    margin-bottom: 133px;
+}
+.brandbannerdiv{
+    position: absolute;
+    width: 17%;
+    height: 139px;
+    margin-left: 15vw;
+    float: left;
+}
+.abc {
+    height: 10vw !important;
+    max-height: 265px !important;
+}
+.bannerimg{
+    width:69%;
+    /*margin-top: -5vw;*/
+    /*margin-left: -2vw;*/
+}
+.Team_auto{
+    margin: 84px auto 0;
+}
+.Team_framework{
+    width: 20vw;
+    height: 20vw;
+    max-width: 350px;
+    max-height: 350px;
+    overflow: hidden;
+}
+
+.Team_framework .flex img{
+    max-width: 267px;
+    width: 100%;
+    height: 100%;
+}
+/*.Team_framework .flex div{
+    width: 100%;
+    height: 100%;
+}*/
+
+@media screen and (max-width:1200px){
+    .Team_framework .flex div {
+        margin: 10px auto;
+    }
+    .flex{
+        /*padding-left: 45px;
+        display: inline-block;*/
+    }
+    .Team_framework {
+        display: inline;
+    }
+    .brandbannerdiv{
+        margin-left: 0;
+        margin-top: 20vw;
+    }
+    .Team-button{
+        top:95% !important;
+    }
+    .abc .brandbannerdiv{
+        margin-top: 16vw;
+    }
+}
+
+
+
+/*按钮*/
+.button{
+    height: 250px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.button a button{
+    display: block;
+    height: 72px;
+    font-style: italic;
+    margin: 55px auto 0;
+    border: 1px solid;
+    padding: 0 60px 0 60px;
+    background: white;
+    color: #575757;
+    font-family: FuturaBT Light;
+}
+
+.flex div{
+    margin-left: 15px;
+    margin-right: 10px;
+}

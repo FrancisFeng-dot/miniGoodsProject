@@ -1,0 +1,195 @@
+<script src="INDEX_JS/jquery-1.9.1.min.js"> </script>
+<link rel="stylesheet" media="screen and (min-width:415px)" href="/index/css/hover.css">
+<link rel="stylesheet" type="text/css" href="/index/css/qzjheader.css">
+<header class="header-wrap">
+    <div class="head-box">
+        <div class="head-box-logo fl">
+            <img src="INDEX_IMAGE/logo.png" alt="">
+        </div>
+        <div class="head-box-nav fl">
+            <div class="col-span">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-list nav_click">
+                {volist name="menuList" id="ice"}
+                <li name="menuli">
+                    <a name="menua" href="{$ice['url']}" style="display: inline-block;">
+                        <span class="menuspan2">{$ice['name'][0]}</span>
+                        <div style="clear: both;"></div>
+                        <span class="menuspan">{$ice['name'][1]}</span>
+                    </a>
+                    <ul>
+                        {volist name="$ice['sonurl']" id="sonmenu"}
+                    <a href="{$sonmenu['url']}?cateid={$sonmenu['id']}"><li class="menuulli"><span>{$sonmenu['name']}</span></li></a>
+                     <!--  <a href="{$sonmenu['url']}news/cateid/{$sonmenu.id}" ><li><span>{$sonmenu['name']}</span></li></a>-->
+                        {/volist}
+                        </li>
+                    </ul>
+                {/volist}
+            </ul>
+
+        </div>
+        <div class="head-box-lang fl">
+            <span class="lang_ac" url="www.minigood.com">En</span>
+            <span class="lang_hy" url="www.minigood.kr">Kr</span>
+        </div>
+    </div>
+
+
+
+</header>
+
+<script>
+    $('.lang_ac').click(function () {
+          var aurl = 'http://www.minigood.com';
+        // if(location.href.indexOf('kr')>0){
+        //     aurl = 'http://www.minigood.com';
+        // } 
+        // document.cookie="langtype="+1;
+        var urlarr = location.href.split('/');
+        if(urlarr[5]){
+            var urlarr2 = urlarr[5].split('?');
+            if(urlarr2[0]=='news'){
+                window.location.href =aurl+ '/index.php/index/news?cateid=152';
+            }
+            else{
+                if(location.href.indexOf('co.kr')>0){
+                     var a = location.href.replace('co.kr','com');
+                                    location.href = a; 
+                }else if(location.href.indexOf('kr')>0){
+                    var a = location.href.replace('kr','com');
+                                    location.href = a;
+            } 
+                }
+        }else{
+           if(location.href.indexOf('co.kr')>0){
+                     var a = location.href.replace('co.kr','com');
+                                    location.href = a; 
+                }else if(location.href.indexOf('kr')>0){
+                    var a = location.href.replace('kr','com');
+                                    location.href = a;
+            } 
+        }    
+    });
+    $('.lang_hy').click(function () {
+        // document.cookie="langtype="+2;
+        var aurl = 'http://www.minigood.kr';
+        // if(location.href.indexOf('com')>0){
+        //     aurl = 'http://www.minigood.com';
+        // } 
+        var urlarr = location.href.split('/');
+        if(urlarr[5]){
+            var urlarr2 = urlarr[5].split('?');
+            if(urlarr2[0]=='news'){
+                window.location.href = aurl+'/index.php/index/news?cateid=155';
+            }
+            else{
+
+                var a = location.href.replace('com','kr');
+                location.href = a; 
+            } 
+        }else{
+            var a = location.href.replace('com','kr');
+                location.href = a; 
+        }       
+    });
+    $('.menuulli').click(function () {
+        var lia = $(this).parent().parent().parent().index();
+        document.cookie="bendili="+lia;
+    });//点击子菜单，存本地该子菜单的父级所在li标签的位置
+    $(document).ready(function(){
+        var urlarr = location.href.split('/');
+        if(urlarr[5]){
+            if(document.cookie.length>0){
+                var cde = document.cookie.split('; ');
+            }
+            for(j=cde.length-1;j>=0;j--){
+                var bcd = cde[j].split('bendili=');
+                if(bcd[1]){
+                    $("[name='menuli']").find('span').removeClass('menuspan3');
+                    $("[name='menuli']").find('span').removeClass('menuspan4');
+                    $("[name='menuli']").eq(bcd[1]).find('span').eq(0).addClass('menuspan3');
+                    $("[name='menuli']").eq(bcd[1]).find('span').eq(1).addClass('menuspan4');
+                }
+            }//从本地cookie拿到父级标签的位置，加类
+            for(i=0;i<$("[name='menuli']").length;i++){
+                menuclass = $("[name='menuli']").eq(i).find('a').attr('href');
+                var menuclass2 = menuclass.split('/');
+                if(menuclass2[3]){
+                    if(menuclass2[3]==urlarr[5]){
+                        $("[name='menuli']").find('span').removeClass('menuspan3');
+                        $("[name='menuli']").find('span').removeClass('menuspan4');
+                        $("[name='menuli']").eq(i).find('span').eq(0).addClass('menuspan3');
+                        $("[name='menuli']").eq(i).find('span').eq(1).addClass('menuspan4');
+                    }//父级标签切换加类
+                    if(menuclass2[3]=='news'){
+                        for(k=cde.length-1;k>=0;k--){
+                            if(cde[k] =="langtype=1"){
+                                $("[name='menuli']").eq(3).find('a').eq(0).attr('href','/index.php/index/news?cateid=152');
+                            }
+                            if(cde[k] =="langtype=2"){
+                                $("[name='menuli']").eq(3).find('a').eq(0).attr('href','/index.php/index/news?cateid=155');
+                            }
+                        }
+                    }//替换新闻父级菜单的href
+                }
+            }
+        }
+        if(urlarr[3]=='index.php'&&urlarr[5]==undefined){
+            $("[name='menuli']").eq(0).find('span').eq(0).addClass('menuspan3');
+            $("[name='menuli']").eq(0).find('span').eq(1).addClass('menuspan4');
+        }//刚刚进来没有点击的时候给首页菜单加类
+        if(urlarr[5]=='news?cateid=152'){
+            $("[name='menuli']").find('span').removeClass('menuspan3');
+            $("[name='menuli']").find('span').removeClass('menuspan4');
+            $("[name='menuli']").eq(3).find('span').eq(0).addClass('menuspan3');
+            $("[name='menuli']").eq(3).find('span').eq(1).addClass('menuspan4');
+        }//切换主菜单，当切换到新闻的时候给菜单类
+        if(document.cookie.length>0){
+            var abc = document.cookie.split('; ');
+        }
+        for(i=abc.length-1;i>=0;i--){
+            if(abc[i] =="langtype=1"){
+                $('.head-box-lang').find('span').removeClass('lang_ac2');
+                $('.head-box-lang').find('span').eq(0).addClass('lang_ac2');
+            }
+            if(abc[i] =="langtype=2"){
+                $('.head-box-lang').find('span').removeClass('lang_ac2');
+                $('.head-box-lang').find('span').eq(1).addClass('lang_ac2');
+            }
+        }//英汉切换同时类变化
+
+        //下滑缩小
+        
+        // $(window).scroll(function(){
+        // // 滚动条距离顶部的距离 大于 20px时
+        // if(window.pageYOffset >= '20'){
+        //     $(".head-box").addClass("scolled");
+        // } 
+        // else{
+        //     $(".head-box").removeClass("scolled");
+        // }
+        // });
+        // $('.head-box-nav').unbind(); 
+         if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|iOS|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i)))
+         {
+            $('.header-wrap a').on('click touchend', function(e) {
+              var el = $(this);
+              var link = el.attr('href');
+              window.location = link;
+           });
+            $("[name='menuli']").eq(3).find('a').eq(0).attr('href','javascript:;');
+            $("[name='menuli']").eq(5).find('a').eq(0).attr('href','javascript:;');
+            $(".head-box-nav").hover(function(){
+            $(".nav-list").show();
+            },function(){
+                $(".nav-list").hide();
+            });
+         }       
+
+    });
+
+</script>

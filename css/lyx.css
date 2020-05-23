@@ -1,0 +1,100 @@
+@charset "utf-8";
+/*修改样式*/
+.products-list p:hover{
+	color: red;
+	transition: all 1s;
+}
+.Team{
+	width: 100%;
+	background: url("../image/pinpairec.png") no-repeat 50% 50%;
+	height: auto;
+	position:relative;
+}
+.Team-button{
+	position: absolute;
+	top: 87%;
+}
+.Team-buttonleft{
+	left: 33%;
+}
+.Team-buttonright{
+	right:41%;
+}
+.framework_one aside{
+	margin: 50px 20px;
+}
+/*.content{
+	max-width: 350px;
+}*/
+.ml_65{
+	margin-left: 50px;
+}
+/*.news-article p{
+	margin-left: 20px;
+}*/
+.news-article section{
+	margin-left: 20px;
+	margin-bottom:65px;
+}
+/*.news-article section{
+	margin-bottom: 50px;
+}*/
+.option{
+	width: 210px;
+}
+.giant-screen img{
+	width: 100%;
+}
+.Team_auto{
+	margin: 0 auto;
+	margin-top:84px;
+}
+.mt_f231{
+	margin-left: 80px;
+}
+.bg_Development_History{
+	background-position: 60%;
+}
+.countries-list{
+	position: relative;
+    top: -250px;
+    left: 30px;
+}
+.globalStoreDev-bg img{
+	width: 100%;
+	height: 1120px;
+}
+.globalStoreDev-box{
+	height: auto;
+}
+.globalStoreDev-up{
+	top: 120px;
+}
+.coo-detail-text{
+	background: url("index/image/cooperation_2.jpg") no-repeat 117px 88px;
+}
+/*.store-container{
+	min-width: 1200px;
+}*/
+/*头部*/
+/*.head-box-nav {
+    position: absolute;
+    top: 49px;
+    right: 194px;
+    float: right;
+    transition: top 0.1s ease;
+}*/
+
+.carousel-next{
+	background-image: url("../image/carousel_r.png");
+	left: 94%;
+	cursor: pointer;
+}
+.carousel-pre{
+	background-image: url("../image/carousel_l.png");
+	left: 2%;
+	cursor: pointer;
+}
+
+
+

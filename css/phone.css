@@ -1,0 +1,423 @@
+
+/*header*/
+.head-box-nav .nav-list{
+	margin-top: 20px;
+}
+/*home*/
+.head-box{
+	min-width: 0;
+	padding: 15px 30px;
+	min-height: 0;
+}
+.head-box-nav{
+	left:50vw !important;
+}
+.head-box-logo{
+	margin-top: 10px;
+}
+.banner-down{
+	width: 80vw;
+	float: right;
+	height: 331px;
+}
+.banner-box-title{
+	left: 15vw;
+}
+.box-title-img1{
+	width: 70vw !important;
+}
+.box-title-img1 img{
+	margin-top: 90px;
+}
+.design-content{
+	width: 100%;
+}
+.design-con-detail{
+	width: 100%;
+	height: 740px;
+	margin-left: 0;
+	padding-left: 0;
+}
+.design-con-img{
+	width: 90vw;
+	height: auto;
+	margin-left: 5vw;
+}
+.design-con-text{
+	width: 90vw;
+	margin-left: 5vw;
+}
+.design-bg{
+	margin-top: 200px;
+	height:300px;
+}
+.design-xiexian{
+	margin-left: 0;	
+}
+.design-content-bottom{
+	top:-60px;
+	padding-left: 5vw;
+}
+.design-content-img{
+	width: 180% !important;
+}
+.small-img{
+	top:50px;
+	left:15vw;
+}
+.products-list li{
+	width: 45vw;
+}
+footer{
+	margin-top: 50px;
+}
+.foot-box{
+	padding-left: 3vw;
+}
+.foot-box-right{
+	margin-right: 3vw;
+	width: 93vw;
+}
+.foot-box-left{
+	width: 93vw;
+}
+.foot-logo{
+	float: right;
+	margin-top: -120px;
+}
+.copyright{
+	float: right;
+	margin-top: -80px;
+}
+.follow-us{
+	margin:43px 0 29px 0;
+}
+.main{
+	overflow: hidden;
+}
+/*brand*/
+.content{
+	margin: 0 !important;
+	max-width:none;
+}
+.Brand_life section{
+	width: 90vw;
+}
+.Brand_title{
+	padding-top: 9px;
+	font-size: 40px;
+}
+.introduced{
+	margin: 10px;
+}
+.button a button{
+	font-size: 22px;
+	padding: 0;
+	width: 90vw;
+}
+.w_754{
+	width: 100% ;
+}
+.Development_History{
+	height: auto !important;
+}
+.bg_Development_History{
+	margin: 0;
+	display: block;
+	overflow: hidden;
+}
+.bg_Development_History div{
+	margin: 0 !important;
+	margin-top: 80px !important;
+	padding:0;
+	width: 100% !important;
+	max-width: none;
+}
+.bg_Development_History p{
+	margin-top: 0 !important;
+	margin-left: 10px !important;
+	font-size: 16px;
+	width: auto !important;
+}
+.Team_framework:nth-child(1),.Team_framework:nth-child(3){
+	margin-left: -1000px;
+}
+.abc{
+	width: 90vw !important;
+	height: 70vw !important;
+	margin-left: 15vw !important;
+}
+.abc .brandbannerdiv{
+	margin-top: 71vw;
+}
+.abc img{
+	width: 70vw;
+	height: auto;
+}
+.Team-buttonright{
+	right: 33%;
+}
+.giant-screen{
+	width: 100vw;
+	background-size: 250%;
+	height: 480px;
+}
+.bg_one{
+	margin:28px auto 20px;
+}
+/*product*/
+.productPage-sort-list{
+	width: 100%;
+}
+.productPage-sort-list li{
+	width: 44vw;
+	margin-left: 4vw;
+	margin-bottom: 5vw;
+}
+.sort-listImg{
+	margin: 0 auto;
+	width: 120px;
+	height: 120px;
+}
+.productPage-container{
+	width: 100%;
+}
+.detail-items-box{
+	width: 100%;
+}
+.img-four{
+	margin-left: 0;
+}
+.itemBox-top{
+	text-align: center;
+}
+.itemBox-top a{
+	display: inline-block;
+	margin: 0 auto;
+	float: none !important;
+}
+.img-four::after{
+	display: none;
+}
+.img-long{
+	width: 47vw;
+
+}
+.itemBox-bottom{
+	width: 47vw;
+}
+/*news*/
+.option{
+	width: 100%;
+}
+.news-article{
+	text-align: center;
+}
+.news-article section{
+	margin-left: 0;
+	min-height: 30vw;
+	display: inline-block;
+	margin-bottom: 140px;
+}
+.news-article section aside{
+	width: 323px;
+	height: 130px;
+	display: inline-block;
+}
+.news-article section aside .title{
+	font-size: 16px;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+.time{
+	bottom: 5px;
+}
+.Coverage{
+	margin-left: -20px;
+}
+/*connect*/
+.cooperation-container{
+	width: 100%;
+}
+.cooperation-content h1{
+	width: 90vw;
+	font-size: 28px;
+	margin: 0 auto;
+}
+.coo-detail-text{
+	width: 100%;
+}
+.coo-detail-text p{
+	margin-left: 20px;
+}
+.person-introduce p span:nth-child(3){
+	padding-left: 8px;
+}
+/*supplierchannel*/
+#channel-content{
+	height: 400px;
+}
+.channel-content{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/*recruitment*/
+.framework{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+#vietnam{
+	width: 100%;
+	height: 30px;
+}
+.contactus{
+	margin-left: 10px;
+}
+/*store*/
+.store-container{
+	min-width: 100%;
+}
+.carousel-pre, .carousel-next{
+	display: none;
+}
+.policy-support ,.joinCondition-box,.conperationProcess-box{
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+.policy-support-img,.joinCondition-img{
+	float: none;
+	overflow: hidden;
+	height: 450px;
+	width: 100%;
+}
+.policy-support-img h2 ,.joinCondition-box h2{
+	color: #fff;
+	line-height: 24px;
+	text-align: center;
+	margin-top: -500px;
+	margin-left: 28vw;
+	width: 180px;
+}
+.joinCondition-img img{
+	width: 316px;
+    height: 632px;
+}
+.policy-support-items{
+	/*margin-top: 500px;*/
+	padding:15px;
+}
+.policy-support p ,.joinCondition-content-item p{
+	text-align: left;
+	font-size: 12px;
+}
+.joinCondition-content{
+	margin: 15px;
+	width: 95vw;
+}
+.joinCondition-box{
+	height: 1105px;
+}
+.joinCondition-box h2{
+	margin-top: -400px;
+}
+.conperationProcess-img img{
+	width: 100%;
+}
+
+.layui-layer{
+	top:20vw !important;
+}
+
+
+
+.conperationProcess-img img:nth-child(2){
+	margin-top: 50px;
+	width: 100%;
+	height:525px;
+}
+.conperationProcess-img img:nth-child(3){
+	margin-bottom: 0;
+	width: 100%;
+	height: 900px;
+}
+.storesdi1{
+	position: absolute;
+	top:118px;
+	left: 0;
+    right: 0;
+    width: 89vw;
+    color:#666666;
+    margin: 0 auto;
+}
+.storesdi2{
+	position: absolute;
+    top: 180px;
+    left: 0;
+    right: 0;
+    color: #666666;
+    width: 330px;
+    margin: auto;
+    font-size: 12px;
+    line-height: 16px;
+}
+.storesdi2 li{
+	list-style:disc inside;
+	text-align:left;
+}
+.storesdi3{
+	position: absolute;
+    top: 525px;
+    left: 0;
+    right: 0;
+    width: 320px;
+    margin: auto;
+}
+.storesdi3 h5{
+	color: red;
+    font-size: 12px;
+    width: 201px;
+    height:30px;
+}
+.storesdi3ul{
+	margin: 0 auto;
+    margin-top: 49px;
+    height: 623px;
+}
+.storesdi3ul li{
+    font-size: 12px;
+    color: #fff;
+    float: left;
+    line-height: 11px;
+    width: 89px;
+    height: 126px;
+    margin-left: 9px;
+    margin-right: 8px;
+    padding: 18px 0 0 0;
+    margin-bottom: 11px;
+}
+.storesdi3 h5:nth-child(1){
+	margin-top: 68px;margin-left: 122px;
+}
+.storesdi3 h5:last-child{
+	margin-left: 113px;
+    margin-top: 27px;
+}
+.storesh2{
+	color: red;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.conperationdiv{
+	position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 116px;
+    border-right: 1px solid#000;
+    width: 0px;
+    height: 21px;
+}

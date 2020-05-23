@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minigood-product</title>
+    <!--<link rel="stylesheet" media="screen and (max-width:768px) "href="INDEX_CSS/common-s.css" />-->
+    <link rel="stylesheet" media="screen and (max-width:1200px)" href="/index/css/common-s.css" />
+    <link rel="stylesheet" media="screen and (min-width:1200px) and (max-width:1440px)" href="/index/css/common-m.css" />
+    <link rel="stylesheet" media="screen and (min-width:1440px)" href="/index/css/common.css" />
+    <link rel="stylesheet" href="/index/css/WYL_css.css"/>
+    <link rel="stylesheet" media="screen and (max-width:414px)" href="/index/css/phone.css" />
+</head>
+<body class="bgc_fb">
+
+<!--头部开始-->
+{include file="./public/header.html"}
+<!--头部结束-->
+
+
+    <!--banner开始-->
+
+    <div class="productPage-banner-box">
+       <div class="banner-img">
+           <img src="/image/product-banner.png" alt="">
+       </div>
+
+    </div>
+
+    <!--banner结束-->
+
+    <!--主体部分开始-->
+
+    <section class="main productPage-main-container">
+
+            <div class="productPage-sortsBox">
+                <ul class="productPage-sort-list">
+                    <li>
+                            <div class="sort-listImg">
+                                <img layer-src="/image/chanpin_01.jpg" src="/image/chanpin_01.jpg" alt="" class="sort-listImg2">
+                            </div>
+                            <p>{if $langtype == 1}Household Merchandises{else}가정 잡화{/if}</p>
+                    </li>
+                    <li>
+                            <div class="sort-listImg">
+                                <img layer-src="/image/chanpin_02.jpg" src="/image/chanpin_02.jpg" alt="" class="sort-listImg2">
+                            </div>
+                            <p>{if $langtype == 1}Personal Care & Cosmetics{else}개인 케어 및 화장용품{/if}</p>
+                    </li>
+                    <li>
+                            <div class="sort-listImg">
+                                <img layer-src="/image/chanpin_03.jpg" src="/image/chanpin_03.jpg" alt="" class="sort-listImg2">
+                            </div>
+                            <p>{if $langtype == 1}Accessories{else}패션 액세서리{/if}</p>
+                    </li>
+                    <li>
+                            <div class="sort-listImg">
+                                <img layer-src="/image/chanpin_04.jpg" src="/image/chanpin_04.jpg" alt="" class="sort-listImg2">
+                            </div>
+                            <p>{if $langtype == 1}Office Supplies{else}사무 및 예체능 용품{/if}</p>
+                    </li>
+                    <li>
+                            <div class="sort-listImg">
+                                <img layer-src="/image/chanpin_05.jpg" src="/image/chanpin_05.jpg" alt="" class="sort-listImg2">
+                            </div>
+                            <p>{if $langtype == 1}Digital Accessories{else}디지털 부품{/if}</p>
+                    </li>
+                    <li>
+                            <div class="sort-listImg">
+                                <img layer-src="/image/chanpin_06.jpg" src="/image/chanpin_06.jpg" alt="" class="sort-listImg2">
+                            </div>
+                            <p>{if $langtype == 1}Clothing & Bags{else}의류/신발/백{/if}</p>
+                    </li>
+                    <li>
+                            <div class="sort-listImg">
+                                <img layer-src="/image/chanpin_07.jpg" src="/image/chanpin_07.jpg" alt="" class="sort-listImg2">
+                            </div>
+                            <p>{if $langtype == 1}Kid's Toy{else}어린이 장난감{/if}</p>
+                    </li>
+                    <li>
+                            <div class="sort-listImg">
+                                <img layer-src="/image/chanpin_08.jpg" src="/image/chanpin_08.jpg" alt="" class="sort-listImg2">
+                            </div>
+                            <p>   {if $langtype == 1}Food{else}식품 시리즈{/if}  </p>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="productPage-container cl">
+                <div class="productPage-item">
+                    <div class="productPage-item-title">
+                       <p>{if $langtype == 1}Household Merchandises{else}가정 잡화{/if}</p>
+                    </div>
+                    <div class="detail-items-box ps_r">
+                        <div class="itemBox-top">
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_01.jpg" src="/image/products_1_01.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <div class="img-four fl">
+                                <a class="a_img">
+                                <div>
+                                    <img layer-src="/image/shangpin_02.jpg" src="/image/product-list_09.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                    
+                                </a>
+                                <a class="a_img">
+                                <div>
+                                    <img layer-src="/image/shangpin_03.jpg" src="/image/product-list_10.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                    
+                                </a>
+                                <a class="a_img">
+                                <div>
+                                     <img layer-src="/image/shangpin_04.jpg" src="/image/product-list_11_03.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                   
+                                </a>
+                                <a class="a_img">
+                                <div>
+                                     <img layer-src="/image/shangpin_05.jpg" src="/image/product-list_12.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                   
+                                </a>
+
+                            </div>
+
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_06.jpg" src="/image/product-list_02.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <a class="img-long fl a_img mr_2">
+                                <img layer-src="/image/shangpin_07.jpg" src="/image/product-list_03.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_08.jpg" src="/image/product-list_04.jpg" alt="" class="sort-listImg2">
+                                </a>
+                            <a class="itemBox-bottom a_img imgposition">
+                                    <img layer-src="/image/shangpin_09.jpg" src="/image/product-list_05.jpg" alt="" class="sort-listImg2">
+                                </a> <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_10.jpg" src="/image/product-list_06.jpg" alt="" class="sort-listImg2">
+                                </a> <a class="itemBox-bottom itemBox-bottomml12 a_img ml_10 mr_2 aposition1 ">
+
+                                    <img name="imga" layer-src="/image/shangpin_11.jpg" src="/image/product-list_07.jpg" alt="" class="sort-listImg2">
+
+                                    <img name="imgb" layer-src="/image/shangpin_11.jpg" src="/image/datu1.jpg" alt="" class="sort-listImg2">
+                                    
+                                </a><a  class="itemBox-bottom a_img aposition2">
+                                    <img layer-src="/image/shangpin_12.jpg" src="/image/product-list_08.jpg" alt="" class="sort-listImg2">
+                                </a>
+                        </div>
+
+                    </div >
+                </div>
+                <div class="productPage-item">
+                    <div class="productPage-item-title">
+                       <p>{if $langtype == 1}Personal Care &Cosmetics{else}개인 케어 및 화장용품{/if}</p>
+                    </div>
+                    <div class="detail-items-box ps_r">
+                        <div class="itemBox-top">
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_13.jpg" src="/image/product-list_13.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <div class="img-four fl">
+                                <a class="a_img">
+                                <div>
+                                    <img layer-src="/image/shangpin_14.jpg" src="/image/product-list_21.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                <div>
+                                    <img layer-src="/image/shangpin_15.jpg" src="/image/product-list_22.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                <div>
+                                    <img layer-src="/image/shangpin_16.jpg" src="/image/product-list_23.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                <div>
+                                    <img layer-src="/image/shangpin_17.jpg" src="/image/product-list_24.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+
+                            </div>
+
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_18.jpg" src="/image/product-list_17.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <a class="img-long fl a_img mr_2">
+                                <img layer-src="/image/shangpin_19.jpg" src="/image/product-list_19.jpg" alt="" class="sort-listImg2">
+                            </a>
+<a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_20.jpg" src="/image/product-list_14.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_21.jpg" src="/image/product-list_15.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_22.jpg" src="/image/product-list_16.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom itemBox-bottomml12 a_img ml_10 mr_2 aposition1">
+                                    <img name="imga" layer-src="/image/shangpin_23.jpg" src="/image/product-list_18.jpg" alt="" class="sort-listImg2">
+
+                                    <img name="imgb" layer-src="/image/shangpin_23.jpg" src="/image/datu2.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img aposition2">
+                                    <img layer-src="/image/shangpin_24.jpg" src="/image/product-list_20.jpg" alt="" class="sort-listImg2">
+                                </a>
+
+                        </div>
+                                
+                    </div >
+                </div>
+                <div class="productPage-item">
+                    <div class="productPage-item-title">
+                       <p>{if $langtype == 1}Accessories{else}패션 액세서리{/if}</p>
+                    </div>
+                    <div class="detail-items-box ps_r">
+                        <div class="itemBox-top">
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_25.jpg" src="/image/product-list_25.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <div class="img-four fl">
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_26.jpg" src="/image/product-list_36.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_27.jpg" src="/image/product-list_35.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_28.jpg" src="/image/product-list_33.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_29.jpg" src="/image/product-list_34.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+
+                            </div>
+
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_30.jpg" src="/image/product-list_32.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <a class="img-long fl a_img mr_2">
+                                <img layer-src="/image/shangpin_31.jpg" src="/image/product-list_31.jpg" alt="" class="sort-listImg2">
+                            </a>
+
+<a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_32.jpg" src="/image/product-list_26.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_33.jpg" src="/image/product-list_27.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_34.jpg" src="/image/product-list_28.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom itemBox-bottomml12 a_img ml_10 mr_2 aposition1">
+                                    <img name="imga" layer-src="/image/shangpin_35.jpg" src="/image/product-list_29.jpg" alt="" class="sort-listImg2">
+
+                                    <img name="imgb" layer-src="/image/shangpin_35.jpg" src="/image/datu3.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img aposition2">
+                                    <img layer-src="/image/shangpin_36.jpg" src="/image/product-list_30.jpg" alt="" class="sort-listImg2">
+                                </a>
+                        </div>
+                                
+                    </div >
+                </div>
+                <div class="productPage-item">
+                    <div class="productPage-item-title">
+                       <p>{if $langtype == 1}Office Supplies{else}사무 및 예체능 용품{/if}</p>
+                    </div>
+                    <div class="detail-items-box ps_r">
+                        <div class="itemBox-top">
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_37.jpg" src="/image/product-list_96.png" alt="" class="sort-listImg2">
+                            </a>
+                            <div class="img-four fl">
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_38.jpg" src="/image/product-list_37.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_39.jpg" src="/image/product-list_38.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_40.jpg" src="/image/product-list_39.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_41.jpg" src="/image/product-list_40.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+
+                            </div>
+
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_42.jpg" src="/image/product-list_89.png" alt="" class="sort-listImg2">
+                            </a>
+                            <a class="img-long fl a_img mr_2">
+                                <img layer-src="/image/shangpin_43.jpg" src="/image/product-list_90.png" alt="" class="sort-listImg2">
+                            </a>
+<a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_44.jpg" src="/image/product-list_91.png" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_45.jpg" src="/image/product-list_92.png" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_46.jpg" src="/image/product-list_93.png" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom itemBox-bottomml12 a_img ml_10 mr_2 aposition1">
+                                    <img name="imga" layer-src="/image/shangpin_47.jpg" src="/image/product-list_94.png" alt="" class="sort-listImg2">
+
+                                    <img name="imgb" layer-src="/image/shangpin_47.jpg" src="/image/datu4.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img aposition2">
+                                    <img layer-src="/image/shangpin_48.jpg" src="/image/product-list_95.jpg" alt="" class="sort-listImg2">
+                                </a>
+
+                        </div>
+                                
+                    </div >
+                </div>
+                <div class="productPage-item">
+                    <div class="productPage-item-title">
+                       <p>{if $langtype == 1}Digital Accessories{else}디지털 부품{/if}</p>
+                    </div>
+                    <div class="detail-items-box ps_r">
+                        <div class="itemBox-top">
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_49.jpg" src="/image/product-list_41.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <div class="img-four fl">
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_50.jpg" src="/image/product-list_57.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_51.jpg" src="/image/product-list_58.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_52.jpg" src="/image/product-list_60.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_53.jpg" src="/image/product-list_59.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+
+                            </div>
+
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_54.jpg" src="/image/product-list_47.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <a class="img-long fl a_img mr_2">
+                                <img layer-src="/image/shangpin_55.jpg" src="/image/product-list_48.jpg" alt="" class="sort-listImg2">
+                            </a>
+<a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_56.jpg" src="/image/product-list_42.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_57.jpg" src="/image/product-list_43.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_58.jpg" src="/image/product-list_44.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom itemBox-bottomml12 a_img ml_10 mr_2 aposition1">
+                                    <img name="imga" layer-src="/image/shangpin_59.jpg" src="/image/product-list_45.jpg" alt="" class="sort-listImg2">
+
+                                    <img name="imgb" layer-src="/image/shangpin_59.jpg" src="/image/datu5.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img aposition2">
+                                    <img layer-src="/image/shangpin_60.jpg" src="/image/product-list_46.jpg" alt="" class="sort-listImg2">
+                                </a>
+
+                        </div>
+                                
+                    </div >
+                </div>
+                <div class="productPage-item">
+                    <div class="productPage-item-title">
+                       <p>{if $langtype == 1}Cases & Bags{else}의류/신발/백{/if}</p>
+                    </div>
+                    <div class="detail-items-box ps_r">
+                        <div class="itemBox-top">
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_61.jpg" src="/image/product-list_49.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <div class="img-four fl">
+                                <a class="a_img">
+                                <div>
+                                    <img layer-src="/image/shangpin_62.jpg" src="/image/product-list_63.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                <div>
+                                    <img layer-src="/image/shangpin_63.jpg" src="/image/product-list_61.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                <div>
+                                    <img layer-src="/image/shangpin_64.jpg" src="/image/product-list_64.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                <div>
+                                    <img layer-src="/image/shangpin_65.jpg" src="/image/product-list_62.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+
+                            </div>
+
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_66.jpg" src="/image/product-list_56.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <a class="img-long fl a_img mr_2">
+                                <img layer-src="/image/shangpin_67.jpg" src="/image/product-list_55.jpg" alt="" class="sort-listImg2">
+                            </a>
+
+<a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_68.jpg" src="/image/product-list_50.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_69.jpg" src="/image/product-list_51.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_70.jpg" src="/image/product-list_52.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom itemBox-bottomml12 a_img ml_10 mr_2 aposition1">
+                                    <img name="imga" layer-src="/image/shangpin_71.jpg" src="/image/product-list_53.jpg" alt="" class="sort-listImg2">
+
+                                    <img name="imgb" layer-src="/image/shangpin_71.jpg" src="/image/datu6.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img aposition2">
+                                    <img layer-src="/image/shangpin_72.jpg" src="/image/product-list_54.jpg" alt="" class="sort-listImg2">
+                                </a>
+                        </div>
+                                
+                    </div >
+                </div>
+                <div class="productPage-item">
+                    <div class="productPage-item-title">
+                       <p>{if $langtype == 1}Kid's Toy{else}어린이 장난감{/if}</p>
+                    </div>
+                    <div class="detail-items-box ps_r">
+                        <div class="itemBox-top">
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_73.jpg" src="/image/product-list_65.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <div class="img-four fl">
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_74.jpg" src="/image/product-list_76.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_75.jpg" src="/image/product-list_73.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_76.jpg" src="/image/product-list_75.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_77.jpg" src="/image/product-list_74.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+
+                            </div>
+
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_78.jpg" src="/image/product-list_71.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <a class="img-long fl a_img mr_2">
+                                <img layer-src="/image/shangpin_79.jpg" src="/image/product-list_72.jpg" alt="" class="sort-listImg2">
+                            </a>
+<a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_80.jpg" src="/image/product-list_66.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_81.jpg" src="/image/product-list_67.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_82.jpg" src="/image/product-list_68.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom itemBox-bottomml12 a_img ml_10 mr_2 aposition1">
+                                    <img name="imga" layer-src="/image/shangpin_83.jpg" src="/image/product-list_69.jpg" alt="" class="sort-listImg2">
+
+                                    <img name="imgb" layer-src="/image/shangpin_83.jpg" src="/image/datu7.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img aposition2">
+                                    <img layer-src="/image/shangpin_84.jpg" src="/image/product-list_70.jpg" alt="" class="sort-listImg2">
+                                </a>
+
+                        </div>
+                                
+                    </div >
+                </div>
+                <div class="productPage-item">
+                    <div class="productPage-item-title">
+                       <p>{if $langtype == 1}Food{else}식품 시리즈{/if}</p>
+                    </div>
+                    <div class="detail-items-box ps_r">
+                        <div class="itemBox-top">
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_85.jpg" src="/image/product-list_77.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <div class="img-four fl">
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_86.jpg" src="/image/product-list_85.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_88.jpg" src="/image/product-list_86.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_87.jpg" src="/image/product-list_87.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+                                <a class="a_img">
+                                    <div>
+                                    <img layer-src="/image/shangpin_89.jpg" src="/image/product-list_88.jpg" alt="" class="sort-listImg2">
+                                </div>
+                                </a>
+
+                            </div>
+
+                            <a class="img-long fl a_img">
+                                <img layer-src="/image/shangpin_90.jpg" src="/image/product-list_83.jpg" alt="" class="sort-listImg2">
+                            </a>
+                            <a class="img-long fl a_img mr_2">
+                                <img layer-src="/image/shangpin_91.jpg" src="/image/product-list_84.jpg" alt="" class="sort-listImg2">
+                            </a>
+<a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_92.jpg" src="/image/product-list_78.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_93.jpg" src="/image/product-list_79.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img">
+                                    <img layer-src="/image/shangpin_94.jpg" src="/image/product-list_80.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom itemBox-bottomml12 a_img ml_10 mr_2 aposition1">
+                                    <img name="imga" layer-src="/image/shangpin_95.jpg" src="/image/product-list_81.jpg" alt="" class="sort-listImg2">
+
+                                    <img name="imgb" layer-src="/image/shangpin_95.jpg" src="/image/datu8.jpg" alt="" class="sort-listImg2">
+                                </a>
+                                <a class="itemBox-bottom a_img aposition2">
+                                    <img layer-src="/image/shangpin_96.jpg" src="/image/product-list_82.jpg" alt="" class="sort-listImg2">
+                                </a>
+
+                        </div>
+                                
+                    </div >
+                </div>
+
+
+
+            </div>
+
+        </section>
+
+    <!--主体部分结束-->
+
+
+<!--尾部开始-->
+{include file="./public/footer.html"}
+<!--尾部结束-->
+
+
+
+
+</body>
+<script src="INDEX_JS/layer/layer.js" type="text/javascript"></script>
+<script>
+    // layer.photos({
+    //     photos: '.sort-listImg'
+    //     ,anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+    //     ,area: ['500px', '500px'] //自定义文本域宽高
+    // });
+    // layer.photos({
+    //     photos: '.a_img'
+    //     ,anim: 5 //0-6的选择，指定弹出图片动画类型，默认随机（请注意，3.0之前的版本用shift参数）
+    //     ,area: ['500px', '500px'] //自定义文本域宽高
+    // });
+    // $('.sort-listImg').on('click', function(){
+    //     if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|iOS|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))){
+    //         layer.open({
+    //         type: 1,
+    //         title: '&nbsp;',
+    //         area: ['85vw', '120vw'],
+    //         offset: 'c', //具体配置参考：offset参数项
+    //         content: '<div style="position:relative;"><div style="position: absolute;top: 4rem;bottom: 0;margin: auto;left: 0;right: 0;">'+$(this).html()+'</div></div>',
+    //         btn: '确定',
+    //         btnAlign: 't', //按钮居中
+    //         yes: function(){
+    //             layer.closeAll();
+    //         }
+    //     });
+    //     }
+    //     else{
+    //         layer.open({
+    //         type: 1,
+    //         title: '&nbsp;',
+    //         area: ['53rem', '30rem'],
+    //         offset: 'c', //具体配置参考：offset参数项
+    //         content: '<div style="position:relative;"><div style="position: absolute;top: 5rem;bottom: 0;margin: auto;left: 0;right: 0;">'+$(this).html()+'</div></div>',
+    //         btn: '确定',
+    //         btnAlign: 't', //按钮居中
+    //         yes: function(){
+    //             layer.closeAll();
+    //         }
+    //     });
+    //     }
+        
+    // });
+    $(document).ready(function(){
+        $('[name=imgb]').hide();
+        if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|iOS|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))){
+            $('[name=imga]').hide();
+            $('[name=imgb]').show();
+        };
+        $('.a_img').on('click', function(){
+            var tanchuang1 = location.href.indexOf('com');
+            var tanchuang2 = location.href.indexOf('kr');
+            var str1 = '';
+            if(tanchuang1>0){
+                str1 = 'Confirm';
+            }
+            if(tanchuang2>0){
+                str1 = '확인';
+            }
+            if((navigator.userAgent.match(/(phone|pad|pod|iPhone|iPod|iOS|iPad|Android|wOSBrowser|BrowserNG|WebOS)/i))){
+               layer.open({
+                type: 1,
+                title: '&nbsp;',
+                area: ['85vw', '120vw'],
+                offset: 't', //具体配置参考：offset参数项
+                content: '<div style="position:relative;"><div style="position: absolute;top: 3rem;bottom: 0;margin: auto;left: 0;right: 0;"><img src="'+$(this).find('img').attr('layer-src')+'" alt="" class="sort-listImg2" style="max-height:200px;"></div></div>',
+                btn: '<span>'+str1+'</span>',
+                btnAlign: 't', //按钮居中
+                yes: function(){
+                    layer.closeAll();
+                }
+            }); 
+            }
+            else{
+            layer.open({
+                type: 1,
+                title: '&nbsp;',
+                area: ['60rem', '40rem'],
+                offset: 't', //具体配置参考：offset参数项
+                content: '<div style="position:relative;"><div style="position: absolute;top: 3rem;bottom: 0;margin: auto;left: 0;right: 0;"><img src="'+$(this).find('img').attr('layer-src')+'" alt="" class="sort-listImg2" style="max-height:486px;"></div></div>',
+                btn: '<span>'+str1+'</span>',
+                btnAlign: 't', //按钮居中
+                yes: function(){
+                    layer.closeAll();
+                }
+            }); 
+            }     
+        });
+    });
+    
+    
+</script>
+</html>

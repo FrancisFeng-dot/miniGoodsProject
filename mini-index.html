@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>minigood-index</title>
+    <link rel="stylesheet" type="text/css" href="/index/css/swiper.min.css">
+    <link rel="stylesheet" media="screen and (max-width:1200px)" href="/index/css/common-s.css" />
+    <link rel="stylesheet" media="screen and (min-width:1200px) and (max-width:1440px)" href="/index/css/common-m.css" />
+    <link rel="stylesheet" media="screen and (min-width:1440px)" href="/index/css/common.css" />
+    <link rel="stylesheet" href="/index/css/WYL_css.css"/>
+    <link rel="stylesheet" href="/index/css/lyx.css">  
+    <link rel="stylesheet" media="screen and (max-width:414px)" href="/index/css/phone.css" />
+</head>
+<body>
+<!--头部开始-->
+{include file="./public/header.html"}
+<!--头部结束-->
+
+<!--banner开始-->
+
+<div class="index-banner-box">
+    <div class="index-banner-up">
+        <div class="banner-box-left fl">
+            <img src="/image/banner_xiexian.png" alt="">
+        </div>
+
+        <div class="banner-box-title fl">
+        {if $langtype == 1}
+            <div class="box-title-img1">
+                <img src="/image/index-txt_03.png" alt="">
+            </div>
+        {else}
+            <div class="box-title-img2">
+                <img src="/image/index-txt_03.png" alt="">
+            </div>
+        {/if}
+        </div>
+    </div>
+    <!-- <div class="banner-down">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="/image/banner2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/banner2_2.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/banner2_3.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/banner2_4.png" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="/image/banner2_5.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div> -->
+    
+        <div class="swiper-container banner-down-box">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide banner-down banner-down1">
+                </div>
+                <div class="swiper-slide banner-down banner-down2">
+                </div>
+                <div class="swiper-slide banner-down banner-down3">
+                </div>
+                <div class="swiper-slide banner-down banner-down4">
+                </div>
+                <div class="swiper-slide banner-down banner-down5">
+                </div>
+            </div>
+        </div>
+    
+</div>
+<!--banner结束-->
+
+<!--主体部分开始-->
+
+<section class="main">
+    <!--设计-->
+
+    <div class="design-box">
+        <div class="design-bg">
+            <div class="design-xiexian">
+                <img src="/image/design-xiexian.png" alt="">
+            </div>
+        </div>
+
+        <div class="design-content">
+            <div class="design-content-top">
+                <div class="product-line"></div>
+                <p class="content-top-title"> {if $langtype == 1}FOCUS + DESIGN{else}초점 + 디자인{/if}</p>
+                <div class="design-con-detail">
+                    <div class="design-con-img fl">
+                        <img src="/image/desing2.png" alt="" style="z-index: 2;
+    position: absolute;">
+                        <img class="xiexian2" src="/image/jiazhi1.png" alt="" style="position: absolute;
+    top: 9px;
+    left: 38%;
+    z-index: 1;
+    width: 62%;">
+                    </div>
+                    <div class="design-con-text fl">
+                        <div class="core-value fl">
+                            {if $langtype == 1}
+                                <p >CORE VALUE</p>
+                                <ul class="core-value-tags">
+                                    <li>
+                                        <a href="">HIGH-QUALITY</a>
+                                    </li>
+                                    <li>
+                                        <a href="">HIGH-TECHNOLOGY</a>
+                                    </li>
+                                    <li>
+                                        <a href="">HIGH-EFFICIENCY</a>
+                                    </li>
+                                    <li  class="horizon-line">
+                                        <a href=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="">LOW-PRICE</a>
+                                    </li>
+                                    <li>
+                                        <a href="">LOW-CROSS PROFIT</a>
+                                    </li>
+                                    <li>
+                                        <a href="">LOW-COST</a>
+                                    </li>
+                                </ul>
+                            {else}
+                                <p >핵심 가치</p>
+                                <ul class="core-value-tags">
+                                    <li>
+                                        <a href="">고품질</a>
+                                    </li>
+                                    <li>
+                                        <a href="">첨단 기술</a>
+                                    </li>
+                                    <li>
+                                        <a href="">높은-효율성</a>
+                                    </li>
+                                    <li  class="horizon-line">
+                                        <a href=""></a>
+                                    </li>
+                                    <li>
+                                        <a href="">낮은-가격</a>
+                                    </li>
+                                    <li>
+                                        <a href="">낮은-교차 이익</a>
+                                    </li>
+                                    <li>
+                                        <a href="">낮은-비용</a>
+                                    </li>
+                                </ul>
+                            {/if}
+
+                        </div>
+                        <div class="core-value-decoration fl"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="design-content-bottom">
+                <img src="/image/design_bottom.png" alt="" class="design-content-img">
+                <div class="small-img">
+                    <img src="/image/mini.png" alt="">
+                    <img src="/image/han-min-l.png" alt="">
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <!--产品-->
+
+    <div class="product-box cl">
+        <div class="product-line"></div>
+        <p class="content-top-title"> {if $langtype == 1}PRODUCT{else}제품{/if}</p>
+        <div class="products cl">
+            <ul class="products-list cl">
+                <li>
+                    <div class="products-list-img">
+                        <img layer-src="/image/product1.jpg" src="/image/product1.jpg" alt="" class="sort-listImg2">
+                    </div>
+                    <p> {if $langtype == 1}Household Merchandises{else}가정용 제품{/if}</p>
+                </li>
+                <li>
+                    <div class="products-list-img">
+                        <img layer-src="/image/product2.jpg" src="/image/product2.jpg" alt="" class="sort-listImg2">
+                    </div>
+
+                    <p> {if $langtype == 1}Personal Care & Cosmetics{else}건강 & 아름다움{/if}</p>
+                </li>
+                <li>
+                    <div class="products-list-img">
+                        <img layer-src="/image/product3.jpg" src="/image/product3.jpg" alt="" class="sort-listImg2">
+                    </div>
+
+                    <p> {if $langtype == 1}Accessories{else}액세서리{/if}</p>
+                </li>
+                <li>
+                    <div class="products-list-img">
+                        <img layer-src="/image/product4.jpg" src="/image/product4.jpg" alt="" class="sort-listImg2">
+                    </div>
+
+                    <p>{if $langtype == 1}Office & Supplies{else}고정 & 스포티 한 상품{/if}</p>
+                </li>
+                <li>
+                    <div class="products-list-img">
+                        <img layer-src="/image/chanpin_b05.jpg" src="/image/chanpin_b05.jpg" alt="" class="sort-listImg2">
+                    </div>
+                    <p>{if $langtype == 1}Digital Accessories{else}디지털 액세서리{/if}</p>
+                </li>
+                <li>
+                    <div class="products-list-img">
+                        <img layer-src="/image/chanpin_b06.jpg" src="/image/chanpin_b06.jpg" alt="" class="sort-listImg2">
+                    </div>
+                    <p>{if $langtype == 1}Clothing & Bags{else}케이스 & 가방{/if}</p>
+                </li>
+                <li>
+                    <div class="products-list-img">
+                        <img layer-src="/image/chanpin_b07.jpg" src="/image/chanpin_b07.jpg" alt="" class="sort-listImg2">
+                    </div>
+                    <p>{if $langtype == 1}Kid's Toy{else}패션 아이템 {/if} </p>
+                </li>
+                <li>
+                    <div class="products-list-img">
+                        <img layer-src="/image/chanpin_b08.jpg" src="/image/chanpin_b08.jpg" alt="" class="sort-listImg2">
+                    </div>
+                    <p>{if $langtype == 1}Food{else}일반 상인{/if} </p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!--主体部分结束-->
+
+<!--尾部开始-->
+{include file="./public/footer.html"}
+<!--尾部结束-->
+<script src="/index/js/swiper.jquery.min.js"></script>
+</body>
+</html>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(function(){
+          var swiper = new Swiper('.swiper-container', {
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay : 30000,
+            loop : true,
+            autoplayDisableOnInteraction : false
+          });
+        })
+    });
+</script>
